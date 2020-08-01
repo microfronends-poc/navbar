@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=production --display-error-details --port 9005",
     "startDev": "webpack-dev-server --mode=development --port 9005",
+    "lint": "echo \\\"no tests\\\"",
     "build": "webpack --mode=production",
     "buildDev": "webpack --mode=development"
   },
