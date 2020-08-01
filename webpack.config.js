@@ -7,7 +7,7 @@ module.exports = (env, { mode }) => {
 	return {
 		entry: path.resolve(__dirname, 'src/root.js'),
 		output: {
-			filename: '@mf-navbar.js',
+			filename: 'mf-navbar.js',
 			libraryTarget: 'system',
 			path: path.resolve(__dirname, 'dist'),
 		},
