@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import styled from 'styled-components';
 import { links } from './links';
 
+const StyledNavbar = styled.div`
+	background-color: lightgreen;
+`;
+
 const Navbar = () => (
-	<div className='navbar'>
+	<StyledNavbar>
 		{links.map((link) => {
 			return (
 				<Link key={link.href} className='nav-link' to={link.href}>
@@ -11,7 +16,7 @@ const Navbar = () => (
 				</Link>
 			);
 		})}
-	</div>
+	</StyledNavbar>
 );
 
 export default Navbar;
